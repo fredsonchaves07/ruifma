@@ -24,7 +24,7 @@ def list_chef_recipe():
 def create_recipe(form, file):
     recipe_name = form.name.data
     recipe_chef = form.chef.data
-    recipe_date = form.date_recipe.data
+    recipe_date = form.date.data
     recipe_ingredients = form.ingredients.data
     recipe_preparations = form.preparations.data
     recipe_adicional_information = form.adicional_information.data
