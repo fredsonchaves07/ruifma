@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin-site.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Receitas Foodfy</title>
+</head>
+    <body>
+        <div class="container">
+     
+        <form action="/admin/refeicoes" method="get" class="form-login">
+            <div class="item">
+                <div>Usuário</div>
+                <div>
+                    <input type="text" name="nome" placeholder="Digite o usuário" required>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Senha</div>
+                <div>
+                    <input type="password" name="senha" placeholder="Digite a senha" required>
+                </div>
+            </div>
+
+            <button type="submit" class="button-login">Acessar</button>
+        </form>
+        </div>
+
+        <footer>
+            <p>&copy; Todos os direitos reservados a RU-IFMA</p>
+        </footer>
+    </body>
+</html>

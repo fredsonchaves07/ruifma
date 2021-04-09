@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% block content %}
+    <div class="content-header">
+        <h2>Cadastro de refeições</h2>
+        <button form="form-create" type="submit" class="button">Salvar</button>
+    </div>
+
+    <form action="/admin/refeicoes/create" method="post" id="form-create" enctype="multipart/form-data">
+    {% include "admin/recipe/fields.html" %}
+    </form>
+
+{% endblock %}

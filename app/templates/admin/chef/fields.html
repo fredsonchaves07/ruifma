@@ -1,0 +1,26 @@
+    <div>
+        <fieldset>
+            <div class="item">
+                <label for="name">Nome</label>
+                {{form.name}}
+            </div>
+        
+            <div class="item">
+                <label for="avatar" >Foto</label>
+                    <label id="photo-upload" for="avatar" class="button">
+                        {% if form.avatar.data %}
+                            {{form.avatar(
+                                accept="image/*",
+                                onchange = "PhotoChef.change(event)"
+                            )}}
+                        {% else  %}                           
+                            {{form.avatar(
+                                accept="image/*",
+                                required="true"
+                            )}}
+                        {% endif %}
+                        Enviar foto
+                    </label> 
+            </div>
+        </fieldset>            
+    </div>
